@@ -1,0 +1,162 @@
+
+@font-face { 
+    font-family: "JuraLight";
+    src: url("../fonts/JuraLight/JuraLight.eot");
+    src: url("../fonts/JuraLight/JuraLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/JuraLight/JuraLight.woff") format("woff"),
+    url("../fonts/JuraLight/JuraLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;}
+html *{
+    font-family: "JuraLight"
+}
+:root{
+    --c-green:#3D3C14;
+    --c-b-green:#2C3226;
+    --c-main:#AC8C8C;
+    --c-yellou:#F2FCCD;
+    --c-olive:#C2C5AA;
+    --c-main-mob:#542A2A ;
+}
+.text-center{
+    text-align: center;
+}
+.ili{
+    color: white;
+    margin-bottom: 5px;
+}
+.form-title{
+    text-align: center;
+    width: 200px;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+input {outline:none;}
+.title-two{
+    font-size: 18px;
+    margin: 5px;
+    color: white;
+}
+.form-auth input::placeholder{
+    color: #afafaf;
+}
+.form-auth input{
+    padding: 3px 10px;
+    border-radius: 10px;
+    min-width: 250px;
+    font-size: 16px;
+    background: #705034;
+    border: none;
+    color: white;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    padding-bottom:15px;
+}
+.reg{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+.register-link-cont{
+    padding-top: 10px;
+}
+.submit-auth, .reg-link{
+    font-size: 16px;
+    color: #6A492D;
+    background: #C7C3C0;
+    border: none;
+
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3px 20px;
+}
+.reg-link{
+    margin-top: 5px;
+    text-decoration: none;
+    text-align: center;
+    width: 160px;
+}
+.form-auth{
+    display: flex;
+    gap: 3px;
+    color: white;
+    margin-bottom: 10px;
+    flex-direction: column;}
+
+.form-autd{
+        display: flex;
+        gap: 3px;
+        color: white;
+        margin-bottom: 10px;
+        flex-direction: column;
+        border: solid;
+    border-width: 1px ;
+        text-align: center;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.a-vid{
+    color: white;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("../img/auth_bac.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.auth-form-container{
+    background: rgb(173,144,97, 60%);
+    display: flex;
+    border-radius: 30px;
+}
+.auth-btn{
+    display: flex;
+}
+.image-auth{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background: #AD9061;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+}
+.auth-btn-container{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.auth-btn div{
+    color: white;
+    cursor: pointer;
+    width: 130px;
+    padding: 3px 0px;
+    text-align: center;
+    border-radius: 10px;
+    background: #705034;
+}
+@media (max-width: 650px){
+    .image-auth{
+        display: none;
+    }
+    .form-container{
+        padding: 30px;
+    }
+}
+

@@ -1,0 +1,233 @@
+
+@font-face { 
+    font-family: "JuraLight";
+    src: url("../fonts/JuraLight/JuraLight.eot");
+    src: url("../fonts/JuraLight/JuraLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/JuraLight/JuraLight.woff") format("woff"),
+    url("../fonts/JuraLight/JuraLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;}
+html *{
+    font-family: "JuraLight"
+}
+:root{
+    --c-green:#3D3C14;
+    --c-b-green:#2C3226;
+    --c-main:#AC8C8C;
+    --c-yellou:#F2FCCD;
+    --c-olive:#C2C5AA;
+    --c-main-mob:#542A2A ;
+}
+.a-vid{
+    color: white;
+}
+body{
+    margin: 0px;
+}
+footer{
+    padding: 10px 10%;
+    justify-content: space-evenly;
+    color: white;
+    display: flex;
+    background: var(--c-b-green);
+}
+.footer-contact-block{
+    background: #282F21;
+    padding: 0px 20px;
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+}
+.header-nav a{
+    color: #F2FCCD;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 0px 10px;
+}
+.header-nav a:last-child{
+    border-left: 1px solid #F2FCCD;
+}
+.header-nav a:first-child{
+    border-right: 1px solid #F2FCCD;
+}
+.plans-left img, .plans-right img{
+    height: 40px;
+}
+.plans-left, .plans-right{
+    position: absolute;
+
+    z-index: 1;
+}
+.plans-right{
+    right: 0px;
+    top: 0px;
+}
+.main-header{
+    overflow: hidden;
+}
+.header-bottom-mobile{
+    display: flex;
+    justify-content: center;
+
+}
+.main-header-mobile{
+    display: none;
+}
+.main-header{
+    height: 40px;
+    background: #414833;
+}
+
+.header-content-mobile{
+    display: flex;
+    text-align: center;
+    padding: 3px;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.header-content{
+    z-index: 99;
+    display: flex;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 3px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.search-cont{
+    display: flex;
+    width: 20%;
+    min-width: 200px;
+    align-items: center;
+}
+.search-input{
+    background: var(--c-olive);
+    outline:none;
+    width: 100%;
+    min-width: 200px;
+    border: none;
+    font-size: 18px;
+    padding: 1px 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.login-linc-cont{
+    display: flex;
+    margin-left: 5%;
+    gap: 5px;
+    align-items: center;
+}
+.login-linc{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.text-login-linc{
+    color: var(--c-olive);
+    text-decoration: none;
+    background: rgba(44, 44, 44, 0.2);
+    padding: 3px;
+}
+.img-search{
+    background: url("../img/search_img.png");
+    width: 20px;
+    height: 19px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#search-btn{
+    display: none;
+}
+.search-cont label{
+    background: var(--c-olive);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+    cursor: pointer;
+}
+
+@media (max-width: 650px){
+    .main-header{
+        display: none;
+    }
+    .header-nav a{
+        font-size: 25px;
+    }
+    .header-nav a:last-child{
+        border: none;
+    }
+    .header-nav a:first-child{
+        border: none;
+    }
+    .header-nav{
+        display: flex;
+        justify-content: center;
+        gap: 3%;
+        border-bottom: 1px solid white;
+        padding: 0px 20px;
+    }
+    .mobile-logo-container{
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--c-main-mob);
+    }
+    .image-logo{
+        background: url("../img/main-logo-mb.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 40px;
+        height: 35px;
+    }
+    .search-input{
+        min-width: 150px;
+        background: #7A5555;
+        color: white;
+    }
+    .search-input::placeholder{
+        color: white;
+    }
+    .header-content-mobile{
+        gap: 1%;
+    }
+    .search-cont label{
+        background: #7A5555;
+    }
+    .img-search {
+        background: url(../img/search_img-mob.png);
+        width: 25px;
+    }
+    .text-login-linc{
+        display: none;
+    }
+    .main-header-mobile{
+        display: block;
+        position: absolute;
+        justify-content: space-around;
+        width: 100%;
+    }
+    footer{
+        padding: 10px 1%;
+    }
+    .footer-logo{
+        font-size: 25px;
+    }
+    .footer-contact-block, .footer-nav-block{
+        font-size: 12px;
+    }
+}
